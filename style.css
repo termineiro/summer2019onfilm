@@ -1,0 +1,170 @@
+body{
+/*    margin: 100px;*/
+     font-family: arial;
+    text-shadow: 1px 1px 10px #000000;
+    background-image:url("images/saltywater.JPG");
+ background-size: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+header{
+    margin: 0 auto;
+    width:1000px;
+    text-align: center;
+    padding: 50px;
+    color:gold;
+    font-family: 
+
+}
+h3{
+   color: white;
+  text-shadow: 1px 1px 10px #000000;
+    font-size: 20px;
+    
+    
+}
+p{
+   color: white;
+  text-shadow: 1px 1px 10px #000000;
+    font-size:20px;
+     font-style: italic;
+    
+}
+   /* The navbar container */
+.topnav {
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 17px 20px;
+  text-decoration: none;
+
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: crimson;
+
+}
+
+
+/** { box-sizing: border-box; }*/
+
+
+
+/* Next & previous buttons */
+.slide-prev, .slide-next {
+    background-color: rgba(0,0,0,0.8);
+    border: 2px solid #EFE06E;
+    border-radius: 0 3px 3px 0;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 16px;
+    position: absolute;
+    top: 50%;
+    /* width: auto; */
+    transform: translate(0, -50%);
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+/* Next Slide Button */
+.slide-next {
+    border-radius: 3px 0 0 3px;
+    right: 0;
+}
+
+/* On hover, add transparency */
+.slide-prev:hover, .slide-next:hover {
+    background-color: #EFE06E;
+    border: 2px solid #000;
+    color: #000;
+}
+
+
+/* Slideshow container */
+.slide-container {
+    max-width: 1140px;
+    position: relative;
+    margin: auto;
+    margin-top: -150px;
+}
+
+.slide-current {
+    display: none;
+    margin-top: 200px;
+}
+
+/* Change these */
+.slide-thumbnails {
+    width: 100%;
+    
+}
+
+.slide-thumbnails-img {
+    border-radius: 3px;
+    width: 100%;
+    transition: all .3s;
+}
+
+
+
+/* Dots */
+.slide__dot-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.slide__dot {
+    background-color: rgb(133, 133, 133);
+    border: 2px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    transition: background-color 0.6s ease;
+  }
+  
+.active, .dot:hover {
+    background-color: #000;
+    border: 2px solid #EFE06E;
+}
+
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.test {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
